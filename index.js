@@ -2,7 +2,6 @@
 
 import * as THREE from './three.js-master/build/three.module.js';
 import {GLTFLoader} from './three.js-master/examples/jsm/loaders/GLTFLoader.js';
-
 const canvas = document.querySelector('.webgl')
 const scene = new THREE.Scene()
 
@@ -55,6 +54,7 @@ renderer.gammaOutput = true
 renderer.render(scene, camera)
 let elapsedTime = 0;
 let object;
+
 function animate(){
     requestAnimationFrame(animate)
     elapsedTime += 0.01;

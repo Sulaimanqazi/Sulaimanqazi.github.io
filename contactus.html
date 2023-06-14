@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas class = "webgl"></canvas>
+    <button class="button1" onclick="window.location.href='aboutus.html'"">About Us</button>
+    <button class="button2" onclick="window.location.href='page.html'"">Home</button>
+    <button class="button3" onclick="window.location.href='page.html'"">yo</button>
+    <h1> Frequently Asked Questions</h1>
+    
+    <h2>
+     </h2>
+ 
+     <button class = "Where" id="Where">Where can I order a can?</button>
+     <button class = "How" id="How">How healthy is this product?</button>
+     <button class = "Does" id="Does">Does this fit my dietary restriction?</button>
+
+     <h2 class = "whereh" id="whereh"> Cans can be ordered in any large retailer near you! These include, but are not limited to Walmart, Costco, Amazon, and more! We sell worldwide! </h2>
+     <h2 class = "howh" id="howh"> A can of Ünique Bliss is edible! You'll be relieved to hear you won't immediately die by drinking this. We're transparent with our ingredients and include a nutrition label on all our cans.  </h2>
+     <img src="nl.png" alt="msub" id="nl">
+     <h2 class = "doesh" id="doesh"> We're proud to say Ünique bliss is Halal, Kosher, and Vegan! As for Allergy restrictions, Ünique Bliss is made in a peanut free lab!  </h2>
+
+
+<style>
+    img{
+        position: absolute;
+        right: 5%;
+        transform: scale(0.4);
+        top: 25%;
+        
+    }
+    h2{
+        font-family: 'cBold';
+        text-align: center;
+        font-size: 40px;
+        position:absolute;
+        left: 25%;
+        width: 50%;
+        opacity:0%
+    }
+    .howh{
+        left:15%;
+        top: 65%;
+        width: 40%;
+    }
+    body{
+        height: 300vh;
+        background-color: #f8a948;
+
+
+    }
+    @font-face {
+        font-family: 'cBold'; /*a name to be used later*/
+        src: url('https://encore.scdn.co/fonts/CircularSp-Book-4eaffdf96f4c6f984686e93d5d9cb325.woff2') format('woff2'); /*URL to font*/
+    }
+    #nl{
+        opacity: 0%;
+    }
+    h1{
+        font-size: 100px;
+        font-family: 'cBold';
+        text-align: center;
+    
+    }
+    button{
+        font-family: 'cBold';
+        font-size: 20px;
+        background-color: #F15A2B;
+        border-color: #F7941D;
+        color: #fcdbb2;
+    }
+    .button1{
+        position:absolute;
+       height: 8%;
+       width: 33.4%;
+       left: 0%;
+       bottom: 92%;
+    }
+
+    .button2{
+        position:absolute;
+        height:8%;
+       width: 33.4%; 
+       left: 33%;
+       bottom: 92%;
+    }
+    .button3{
+        position:absolute;
+        height:8%;
+       width: 34%; 
+       left: 66%;
+       bottom: 92%;
+    }
+    .Where{
+        border-radius: 15px;
+        Height: 3%;
+        width: 33.4%;
+        font-size: 30px;
+        opacity:100%;
+
+
+    }
+    .How{
+        border-radius: 15px;
+        Height: 3%;
+        width: 33.4%;
+        font-size: 30px;
+        opacity:100%;
+    }
+    .Does{
+        position:absolute;
+        border-radius: 15px;
+        Height: 8.8%;
+        width: 33%;
+        font-size: 30px;
+        opacity:100%;
+    }
+    .Where:focus ~ #whereh{
+        opacity:100%
+    }
+
+    .How:focus ~ #howh{
+        opacity:100%;
+    }
+    .How:focus ~ #nl{
+        opacity:100%;
+    }
+    .Does:focus ~ #doesh{
+        opacity:100%;
+    }
+
+
+
+</style>
+
+</body>
+</html>

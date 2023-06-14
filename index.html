@@ -7,9 +7,34 @@
     <title>3d model loader</title>
 </head>
 <body>
-    <canvas class = "webgl"></canvas>
-    
+    <div class"container">
 
-    <script type="module" src="index.js"></script>
+        <canvas class = "webgl"></canvas>
+        <script type="module" src="index.js"></script>
+        <div class = "box">
+            <button type="button" onclick="window.location.href='page.html'""></button>
+        </div>
+    </div>
+
+    <style>
+        .container{
+            z-index: 0;
+        }
+        .box {
+            scale: 100%;
+            position: absolute;
+            left: 42%;
+            z-index: 9;
+            top: 20%;
+        }
+
+        button{
+            width: 300px;
+            height: 500px;
+            opacity: 0%;
+            z-index: 10;
+        }
+    </style>
+
 </body>
 </html>
