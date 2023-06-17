@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
     <canvas class = "webgl"></canvas>
     <button class="button1" onclick="window.location.href='aboutus.html'"">About Us</button>
-    <button class="button2" onclick="window.location.href='contactus.html'"">Contact Us</button>
-    <button class="button3" onclick="window.location.href='page.html'"">yo</button>
+    <button class="button2" onclick="window.location.href='faq.html'"">FAQ</button>
+    <button class="button3" onclick="window.location.href='contactus.html'"">Contact Us</button>
     <h1> The Drink of the World!</h1>
     
     <img src="msub.png" alt="msub">
@@ -34,7 +34,6 @@
     body{
         height: 300vh;
         background-color: #f8a948;
-
 
     }
     @font-face {
@@ -77,9 +76,30 @@
        bottom: 92%;
     }
 
+    body{
+        zoom: 100%;
 
+    }
 
+    @media (max-width: 1920px) and (max-height: 1080px){
+        body{
+            zoom: 80%;
+        }
+    }
 </style>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const handleResize = () => {
+            if (window.innerWidth <= 1920 && window.innerHeight <= 1080) {
+                document.body.style.zoom = '80%;'
+            } else {
+                document.body.style.zoom = '100%;'
+            }
+        };
 
+        window.addEventListener('resize', handleResize);
+        handleResize();
+    })
+</script>
 </body>
 </html>

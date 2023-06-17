@@ -8,9 +8,9 @@
 </head>
 <body>
     <canvas class = "webgl"></canvas>
-    <button class="button1" onclick="window.location.href='aboutus.html'"">Home</button>
-    <button class="button2" onclick="window.location.href='contactus.html'"">Contact Us</button>
-    <button class="button3" onclick="window.location.href='page.html'"">yo</button>
+    <button class="button1" onclick="window.location.href='page.html'"">Home</button>
+    <button class="button2" onclick="window.location.href='faq.html'"">FAQ</button>
+    <button class="button3" onclick="window.location.href='contactus.html'"">Contact Us</button>
     <h3> About Us</h3>
     <h1> The Story of Ünique Bliss</h1>
     
@@ -114,9 +114,30 @@
        bottom: 92%;
     }
 
+    body{
+        zoom: 100%;
 
+    }
 
+    @media (max-width: 1800px) and (max-height: 800px){
+        body{
+            zoom: 80%;
+        }
+    }
 </style>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const handleResize = () => {
+            if (window.innerWidth <= 1800 && window.innerHeight <= 800) {
+                document.body.style.zoom = '80%;'
+            } else {
+                document.body.style.zoom = '100%;'
+            }
+        };
 
+        window.addEventListener('resize', handleResize);
+        handleResize();
+    })
+</script>
 </body>
 </html>
