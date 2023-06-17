@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Unique Bliss</title>
+    <link rel="icon" type="image/x-icon" href="fav.png">
 </head>
 <body>
     <canvas class = "webgl"></canvas>
@@ -43,7 +44,7 @@
     }
     body{
         height: 300vh;
-        background-color: #f8a948;
+        background-color: #ffd255;
 
     }
     @font-face {
@@ -99,7 +100,7 @@
     }
 
 
-    @media (max-width: 1920px) and (max-height: 1080px){
+    @media (max-width: 1800px) and (max-height: 800px){
         body{
             zoom: 80%;
         }
@@ -108,7 +109,7 @@
 <script>
     window.addEventListener('DOMContentLoaded', () => {
         const handleResize = () => {
-            if (window.innerWidth <= 1920 && window.innerHeight <= 1080) {
+            if (window.innerWidth <= 1800 && window.innerHeight <= 800) {
                 document.body.style.zoom = '80%;'
             } else {
                 document.body.style.zoom = '100%;'
